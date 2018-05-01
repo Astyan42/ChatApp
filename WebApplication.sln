@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{2EB50CA5-FECF-471E-B0BC-8794EAEA8579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainObjects", "DomainObjects\DomainObjects.csproj", "{F6B6FA7B-3248-4F06-97E4-40C2F149E5EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{FD77E41B-D84B-4714-A01C-CEB44E2403E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketManager.Common", "WebSocketManager.Common\WebSocketManager.Common.csproj", "{F46907DB-7649-4331-8209-12DEDB670C0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketManager", "WebSocketManager\WebSocketManager.csproj", "{0B879867-4CAF-4CA6-8FD5-20CCF1B22F92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Run|Any CPU = Run|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EB50CA5-FECF-471E-B0BC-8794EAEA8579}.Run|Any CPU.ActiveCfg = Run|Any CPU
+		{2EB50CA5-FECF-471E-B0BC-8794EAEA8579}.Run|Any CPU.Build.0 = Run|Any CPU
+		{F6B6FA7B-3248-4F06-97E4-40C2F149E5EB}.Run|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B6FA7B-3248-4F06-97E4-40C2F149E5EB}.Run|Any CPU.Build.0 = Debug|Any CPU
+		{FD77E41B-D84B-4714-A01C-CEB44E2403E9}.Run|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD77E41B-D84B-4714-A01C-CEB44E2403E9}.Run|Any CPU.Build.0 = Debug|Any CPU
+		{F46907DB-7649-4331-8209-12DEDB670C0B}.Run|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46907DB-7649-4331-8209-12DEDB670C0B}.Run|Any CPU.Build.0 = Debug|Any CPU
+		{0B879867-4CAF-4CA6-8FD5-20CCF1B22F92}.Run|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B879867-4CAF-4CA6-8FD5-20CCF1B22F92}.Run|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

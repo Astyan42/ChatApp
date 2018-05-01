@@ -1,0 +1,12 @@
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/bin/Debug/netcoreapp2.1/BLL.deps.json
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/bin/Debug/netcoreapp2.1/BLL.dll
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/bin/Debug/netcoreapp2.1/BLL.pdb
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/bin/Debug/netcoreapp2.1/DomainObjects.dll
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/bin/Debug/netcoreapp2.1/DomainObjects.pdb
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/obj/Debug/netcoreapp2.1/BLL.csprojAssemblyReference.cache
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/obj/Debug/netcoreapp2.1/BLL.csproj.CoreCompileInputs.cache
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/obj/Debug/netcoreapp2.1/BLL.AssemblyInfoInputs.cache
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/obj/Debug/netcoreapp2.1/BLL.AssemblyInfo.cs
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/obj/Debug/netcoreapp2.1/BLL.csproj.CopyComplete
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/obj/Debug/netcoreapp2.1/BLL.dll
+/Users/jdeveaux/RiderProjects/WebApplication/BLL/obj/Debug/netcoreapp2.1/BLL.pdb

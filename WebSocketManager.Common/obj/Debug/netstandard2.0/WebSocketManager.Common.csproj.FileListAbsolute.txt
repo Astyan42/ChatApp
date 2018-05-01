@@ -1,0 +1,9 @@
+/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/bin/Debug/netstandard2.0/WebSocketManager.Common.deps.json
+/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/bin/Debug/netstandard2.0/WebSocketManager.Common.dll
+/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/bin/Debug/netstandard2.0/WebSocketManager.Common.pdb
+/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/obj/Debug/netstandard2.0/WebSocketManager.Common.csprojAssemblyReference.cache
+/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/obj/Debug/netstandard2.0/WebSocketManager.Common.csproj.CoreCompileInputs.cache
+/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/obj/Debug/netstandard2.0/WebSocketManager.Common.AssemblyInfoInputs.cache
+/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/obj/Debug/netstandard2.0/WebSocketManager.Common.AssemblyInfo.cs
+/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/obj/Debug/netstandard2.0/WebSocketManager.Common.dll
+/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/obj/Debug/netstandard2.0/WebSocketManager.Common.pdb

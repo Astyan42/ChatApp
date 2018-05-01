@@ -1,0 +1,9 @@
+/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/bin/Debug/netcoreapp2.1/DomainObjects.deps.json
+/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/bin/Debug/netcoreapp2.1/DomainObjects.dll
+/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/bin/Debug/netcoreapp2.1/DomainObjects.pdb
+/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/obj/Debug/netcoreapp2.1/DomainObjects.csprojAssemblyReference.cache
+/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/obj/Debug/netcoreapp2.1/DomainObjects.csproj.CoreCompileInputs.cache
+/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/obj/Debug/netcoreapp2.1/DomainObjects.AssemblyInfoInputs.cache
+/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/obj/Debug/netcoreapp2.1/DomainObjects.AssemblyInfo.cs
+/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/obj/Debug/netcoreapp2.1/DomainObjects.dll
+/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/obj/Debug/netcoreapp2.1/DomainObjects.pdb

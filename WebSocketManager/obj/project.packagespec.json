@@ -1,0 +1,55 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager/WebSocketManager.csproj",
+    "projectName": "WebSocketManager",
+    "projectPath": "/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager/WebSocketManager.csproj",
+    "outputPath": "/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netstandard2.0"
+    ],
+    "frameworks": {
+      "netstandard2.0": {
+        "projectReferences": {
+          "/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/WebSocketManager.Common.csproj": {
+            "projectPath": "/Users/jdeveaux/RiderProjects/WebApplication/WebSocketManager.Common/WebSocketManager.Common.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netstandard2.0": {
+      "dependencies": {
+        "Microsoft.AspNetCore.WebSockets": {
+          "target": "Package",
+          "version": "[2.0.0, )"
+        },
+        "NETStandard.Library": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.1, )",
+          "autoReferenced": true
+        },
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[10.0.3, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

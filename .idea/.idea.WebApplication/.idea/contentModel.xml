@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_WebApplication.844969113.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="BLL" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BLL.csproj" t="IncludeRecursive" />
+        <e p="Handlers" t="Include">
+          <e p="ChatHandler.cs" t="Include" />
+          <e p="UserHandler.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="BLL.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="DomainObjects" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DomainObjects.csproj" t="IncludeRecursive" />
+        <e p="Interfaces" t="Include">
+          <e p="Handlers" t="Include">
+            <e p="IChatHandler.cs" t="Include" />
+            <e p="IUserHandler.cs" t="Include" />
+          </e>
+          <e p="messages" t="Include">
+            <e p="IMessage.cs" t="Include" />
+          </e>
+        </e>
+        <e p="messages" t="Include">
+          <e p="Abstract" t="Include">
+            <e p="BaseMessage.cs" t="Include" />
+          </e>
+          <e p="MessageType.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="ChatMessage.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="DomainObjects.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="WebApplication" t="IncludeRecursive">
+        <e p=".gitignore" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ClientApp" t="Include">
+          <e p=".gitignore" t="Include" />
+          <e p="_srcold" t="Include">
+            <e p="actions" t="Include">
+              <e p="index.js" t="Include" />
+              <e p="types.js" t="Include" />
+            </e>
+            <e p="App.js" t="Include" />
+            <e p="App.test.js" t="Include" />
+            <e p="components" t="Include">
+              <e p="Counter.js" t="Include" />
+              <e p="FetchData.js" t="Include" />
+              <e p="Home.js" t="Include" />
+              <e p="Layout.js" t="Include" />
+            </e>
+            <e p="index.css" t="Include" />
+            <e p="index.js" t="Include" />
+            <e p="reducers" t="Include">
+              <e p="AuthReducer.js" t="Include" />
+              <e p="index.js" t="Include" />
+            </e>
+            <e p="registerServiceWorker.js" t="Include" />
+          </e>
+          <e p="package-lock.json" t="Include" />
+          <e p="package.json" t="Include" />
+          <e p="public" t="Include">
+            <e p="favicon.ico" t="Include" />
+            <e p="index.html" t="Include" />
+            <e p="manifest.json" t="Include" />
+          </e>
+          <e p="README.md" t="Include" />
+          <e p="src" t="Include">
+            <e p="actions" t="Include">
+              <e p="actionTypes.js" t="Include" />
+              <e p="Enums" t="Include">
+                <e p="eventReceived.js" t="Include" />
+              </e>
+              <e p="index.js" t="Include" />
+              <e p="restApi.js" t="Include" />
+              <e p="websocket.js" t="Include" />
+            </e>
+            <e p="App.js" t="Include" />
+            <e p="index.js" t="Include" />
+            <e p="JoinForm.js" t="Include" />
+            <e p="messages" t="Include">
+              <e p="Message.js" t="Include" />
+              <e p="MessageList.js" t="Include" />
+            </e>
+            <e p="reducers" t="Include">
+              <e p="currentUser.js" t="Include" />
+              <e p="index.js" t="Include" />
+              <e p="messages.js" t="Include" />
+              <e p="users.js" t="Include" />
+            </e>
+            <e p="SendMessageForm.js" t="Include" />
+            <e p="Users" t="Include">
+              <e p="User.js" t="Include" />
+              <e p="UserList.js" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="api" t="Include">
+            <e p="v1" t="Include">
+              <e p="MessageController.cs" t="Include" />
+              <e p="UserController.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="NotificationMessageHandler.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Run" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="WebApplication.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="WebApplication.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebApplication.sln" t="IncludeFlat" />
+      <e p="WebSocketManager" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="WebSocketManager.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="WebSocketConnectionManager.cs" t="Include" />
+        <e p="WebSocketHandler.cs" t="Include" />
+        <e p="WebSocketManager.csproj" t="IncludeRecursive" />
+        <e p="WebSocketManagerExtensions.cs" t="Include" />
+        <e p="WebSocketManagerMiddleware.cs" t="Include" />
+      </e>
+      <e p="WebSocketManager.Common" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Json" t="Include">
+          <e p="JsonBinderWithoutAssembly.cs" t="Include" />
+          <e p="PrimitiveJsonConverter.cs" t="Include" />
+        </e>
+        <e p="Networking" t="Include">
+          <e p="InvocationDescriptor.cs" t="Include" />
+          <e p="InvocationResult.cs" t="Include" />
+          <e p="Message.cs" t="Include" />
+          <e p="RemoteException.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="WebSocketManager.Common.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Strategies" t="Include">
+          <e p="ControllerMethodInvocationStrategy.cs" t="Include" />
+          <e p="DecoratedControllerMethodInvocationStrategy.cs" t="Include" />
+          <e p="MethodInvocationStrategy.cs" t="Include" />
+          <e p="StringMethodInvocationStrategy.cs" t="Include" />
+        </e>
+        <e p="WebSocketManager.Common.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+    <e p="/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.identity.ui/2.1.0-preview2-final/contentFiles/any/netstandard2.0/THIRD-PARTY-NOTICES" t="Include" />
+  </component>
+</project>
