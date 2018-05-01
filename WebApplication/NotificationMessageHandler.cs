@@ -16,6 +16,7 @@ namespace WebApplication
 
         public NotificationsMessageHandler(WebSocketConnectionManager webSocketConnectionManager, IUserHandler _userHandler) : base(webSocketConnectionManager, new StringMethodInvocationStrategy())
         {
+            this._userHandler = _userHandler;
         }
 
         public Message GenerateMessageFromPayload<T>(T payload, DomainObjects.Messages.MessageType messageType)
@@ -35,6 +36,15 @@ namespace WebApplication
                 Data = serializedMessage
             };
             return mess;
+        }
+
+        public override async Task OnDisconnected(WebSocket socket)
+        {
+            var socketId = WebSocketConnectionManager.GetId(socket);
+            var deletedUser = _userHandler.Remove(socketId);
+            var mess = this.GenerateMessageFromPayload(deletedUser, DomainObjects.Messages.MessageType.UserLeft);
+            await base.OnDisconnected(socket);
+            await this.SendMessageToAllAsync(mess);
         }
     }
 }

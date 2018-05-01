@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using DomainObjects.Interfaces;
 using DomainObjects.Interfaces.Handlers;
 using DomainObjects.Messages.Abstract;
@@ -26,9 +27,11 @@ namespace WebApplication.Controllers.api.v1
         [HttpPost]
         public async void Join([FromBody]User userJoining, [FromQuery]string socketId)
         {
+            if(userJoining.userId == Guid.Empty) userJoining.userId = Guid.NewGuid();
+            
             var mess = _notificationsMessageHandler.GenerateMessageFromPayload(userJoining, MessageType.JoinRequested);
             await _notificationsMessageHandler.SendMessageAsync(socketId, mess);
-            _userHandler.Add(userJoining);
+            _userHandler.Add(userJoining, socketId);
 
             mess = _notificationsMessageHandler.GenerateMessageFromPayload(_chatHandler.GetCacheMessages(), MessageType.MessageHistory);
             await _notificationsMessageHandler.SendMessageAsync(socketId, mess);

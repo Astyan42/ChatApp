@@ -22,7 +22,7 @@ const users = (state = new List(), action) => {
         return state;
     };
     const mapping = {
-        [actionTypes.userLeft]: (state, action) => state.filter((user) => user.get('id') !== action.payload.userId),
+        [actionTypes.userLeft]: (state, action) => state.filter((user) => user.get('userId') !== action.payload.userId),
         [actionTypes.joinRequested]: (state, action) => addUser(action.payload),
         [actionTypes.userJoined]: (state, action) => addUser(action.payload),
         [actionTypes.usersRequested]: (state, action) => addUsers(action.payload)
