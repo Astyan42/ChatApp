@@ -10,10 +10,10 @@
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
-      "netcoreapp2.1"
+      "netcoreapp2.0"
     ],
     "frameworks": {
-      "netcoreapp2.1": {
+      "netcoreapp2.0": {
         "projectReferences": {
           "/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/DomainObjects.csproj": {
             "projectPath": "/Users/jdeveaux/RiderProjects/WebApplication/DomainObjects/DomainObjects.csproj"
@@ -28,12 +28,12 @@
     }
   },
   "frameworks": {
-    "netcoreapp2.1": {
+    "netcoreapp2.0": {
       "dependencies": {
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
-          "version": "[2.1.0-preview2-26406-04, )",
+          "version": "[2.0.0, )",
           "autoReferenced": true
         }
       },

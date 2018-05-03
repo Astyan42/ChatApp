@@ -12,7 +12,6 @@ public class Startup
 {
     public void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
     {
-        app.UseStaticFiles();
         app.UseCors(builder =>
         {
             builder.AllowAnyOrigin();

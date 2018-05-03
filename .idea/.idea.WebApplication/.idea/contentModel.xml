@@ -12,7 +12,7 @@
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="debug" t="Include">
-            <e p="netcoreapp2.1" t="Include">
+            <e p="netcoreapp2.0" t="Include">
               <e p="BLL.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -42,7 +42,7 @@
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="debug" t="Include">
-            <e p="netcoreapp2.1" t="Include">
+            <e p="netcoreapp2.0" t="Include">
               <e p="DomainObjects.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -54,67 +54,6 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="ClientApp" t="Include">
-          <e p=".gitignore" t="Include" />
-          <e p="_srcold" t="Include">
-            <e p="actions" t="Include">
-              <e p="index.js" t="Include" />
-              <e p="types.js" t="Include" />
-            </e>
-            <e p="App.js" t="Include" />
-            <e p="App.test.js" t="Include" />
-            <e p="components" t="Include">
-              <e p="Counter.js" t="Include" />
-              <e p="FetchData.js" t="Include" />
-              <e p="Home.js" t="Include" />
-              <e p="Layout.js" t="Include" />
-            </e>
-            <e p="index.css" t="Include" />
-            <e p="index.js" t="Include" />
-            <e p="reducers" t="Include">
-              <e p="AuthReducer.js" t="Include" />
-              <e p="index.js" t="Include" />
-            </e>
-            <e p="registerServiceWorker.js" t="Include" />
-          </e>
-          <e p="package-lock.json" t="Include" />
-          <e p="package.json" t="Include" />
-          <e p="public" t="Include">
-            <e p="favicon.ico" t="Include" />
-            <e p="index.html" t="Include" />
-            <e p="manifest.json" t="Include" />
-          </e>
-          <e p="README.md" t="Include" />
-          <e p="src" t="Include">
-            <e p="actions" t="Include">
-              <e p="actionTypes.js" t="Include" />
-              <e p="Enums" t="Include">
-                <e p="eventReceived.js" t="Include" />
-              </e>
-              <e p="index.js" t="Include" />
-              <e p="restApi.js" t="Include" />
-              <e p="websocket.js" t="Include" />
-            </e>
-            <e p="App.js" t="Include" />
-            <e p="index.js" t="Include" />
-            <e p="JoinForm.js" t="Include" />
-            <e p="messages" t="Include">
-              <e p="Message.js" t="Include" />
-              <e p="MessageList.js" t="Include" />
-            </e>
-            <e p="reducers" t="Include">
-              <e p="currentUser.js" t="Include" />
-              <e p="index.js" t="Include" />
-              <e p="messages.js" t="Include" />
-              <e p="users.js" t="Include" />
-            </e>
-            <e p="SendMessageForm.js" t="Include" />
-            <e p="Users" t="Include">
-              <e p="User.js" t="Include" />
-              <e p="UserList.js" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="Controllers" t="Include">
           <e p="api" t="Include">
             <e p="v1" t="Include">
@@ -125,8 +64,8 @@
         </e>
         <e p="NotificationMessageHandler.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Run" t="Include">
-            <e p="netcoreapp2.1" t="Include">
+          <e p="debug" t="Include">
+            <e p="netcoreapp2.0" t="Include">
               <e p="WebApplication.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -182,6 +121,5 @@
         <e p="WebSocketManager.Common.csproj" t="IncludeRecursive" />
       </e>
     </e>
-    <e p="/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.identity.ui/2.1.0-preview2-final/contentFiles/any/netstandard2.0/THIRD-PARTY-NOTICES" t="Include" />
   </component>
 </project>

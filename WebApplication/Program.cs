@@ -15,6 +15,7 @@ namespace WebApplication
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
+                .UseUrls("http://*:80") // this should be set using an environment variable
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()

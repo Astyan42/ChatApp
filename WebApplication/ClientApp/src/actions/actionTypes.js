@@ -1,9 +1,0 @@
-export const typingStarted = 'typingStarted';
-export const typingStopped = 'typingStopped';
-export const messageSendRequested = 'messageSendRequested';
-export const userJoined = 'userJoined';
-export const joinRequested = 'joinRequested';
-export const userLeft = 'userLeft';
-export const messageAdded = 'messageAdded';
-export const messageHistory = 'messageHistory';
-export const usersRequested = 'usersRequested';

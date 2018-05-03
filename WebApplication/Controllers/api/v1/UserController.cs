@@ -27,6 +27,7 @@ namespace WebApplication.Controllers.api.v1
         [HttpPost]
         public async void Join([FromBody]User userJoining, [FromQuery]string socketId)
         {
+            Console.WriteLine("UserController : Join");
             if(userJoining.userId == Guid.Empty) userJoining.userId = Guid.NewGuid();
             
             var mess = _notificationsMessageHandler.GenerateMessageFromPayload(userJoining, MessageType.JoinRequested);
@@ -46,7 +47,7 @@ namespace WebApplication.Controllers.api.v1
         [HttpGet]
         public async void GetList(string socketId)
         {
-            
+            Console.WriteLine("UserController : GetList");
             var mess = _notificationsMessageHandler.GenerateMessageFromPayload(_userHandler.GetUsers(), MessageType.UsersRequested);
             await _notificationsMessageHandler.SendMessageAsync(socketId, mess);
         }

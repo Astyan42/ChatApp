@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using DomainObjects.Interfaces.Handlers;
 using DomainObjects.Messages.Abstract;
 using DomainObjects.Models;
@@ -23,6 +24,7 @@ namespace WebApplication.Controllers.api.v1
         [HttpGet]
         public async void GetList(string socketId)
         {
+            Console.WriteLine("MessageController : GetList");
             var mess = _notificationsMessageHandler.GenerateMessageFromPayload(_chatHandler.GetCacheMessages(), MessageType.MessageHistory);
             await _notificationsMessageHandler.SendMessageAsync(socketId, mess);
         }
@@ -30,6 +32,7 @@ namespace WebApplication.Controllers.api.v1
         [HttpPost]
         public async void Send([FromBody]ChatMessage chat)
         {
+            Console.WriteLine("MessageController : Send");
             chat = _chatHandler.SendMessage(chat);
             var mess = _notificationsMessageHandler.GenerateMessageFromPayload(chat, MessageType.MessageAdded);
             await _notificationsMessageHandler.SendMessageToAllAsync(mess);
