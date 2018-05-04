@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using DomainObjects.Interfaces.Handlers;
-using DomainObjects.Messages.Abstract;
 using DomainObjects.Models;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using WebSocketManager.Common;
 using MessageType = DomainObjects.Messages.MessageType;
 
 namespace WebApplication.Controllers.api.v1
@@ -21,6 +17,11 @@ namespace WebApplication.Controllers.api.v1
             _chatHandler = chatHandler;
         }
         
+        /// <summary>
+        /// GET Service
+        /// This service will be used in order to get back the current list of message in cache
+        /// </summary>
+        /// <param name="socketId">The id of the socket which will be used to send the answer</param>
         [HttpGet]
         public async void GetList(string socketId)
         {
@@ -29,6 +30,11 @@ namespace WebApplication.Controllers.api.v1
             await _notificationsMessageHandler.SendMessageAsync(socketId, mess);
         }
         
+        /// <summary>
+        /// POST Service
+        /// This service will be used in order to send a message to all users connected in the chat.
+        /// </summary>
+        /// <param name="chat">chat message should be contained in the body of the request</param>
         [HttpPost]
         public async void Send([FromBody]ChatMessage chat)
         {

@@ -24,6 +24,13 @@ namespace WebApplication.Controllers.api.v1
             _notificationsMessageHandler = notificationsMessageHandler;
         }
         
+        /// <summary>
+        /// POST Service
+        /// This service will log a new user into the chat.
+        /// This will send the join requested along with the socket id and send the message list and connected user through the socket
+        /// </summary>
+        /// <param name="userJoining">the user joining the chat. An id will be attributed to the user and he will be sent back to the client</param>
+        /// <param name="socketId">the socketId of the requester</param>
         [HttpPost]
         public async void Join([FromBody]User userJoining, [FromQuery]string socketId)
         {
@@ -44,6 +51,12 @@ namespace WebApplication.Controllers.api.v1
             await _notificationsMessageHandler.SendMessageToAllAsync(mess);
         }
         
+        /// <summary>
+        /// GET Service
+        /// This service will return a list of connected user.
+        /// It will send the list back using the websocket
+        /// </summary>
+        /// <param name="socketId">The id of the socket which will be used to send the answer</param>
         [HttpGet]
         public async void GetList(string socketId)
         {

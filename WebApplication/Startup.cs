@@ -10,6 +10,7 @@ using WebSocketManager;
 
 public class Startup
 {
+    
     public void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
     {
         app.UseCors(builder =>
