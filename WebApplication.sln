@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketManager.Common", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketManager", "WebSocketManager\WebSocketManager.csproj", "{0B879867-4CAF-4CA6-8FD5-20CCF1B22F92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{87E224B9-3E0F-4050-B006-31E6EC977290}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Run|Any CPU = Run|Any CPU
@@ -25,5 +27,7 @@ Global
 		{0B879867-4CAF-4CA6-8FD5-20CCF1B22F92}.Run|Any CPU.Build.0 = Debug|Any CPU
 		{2EB50CA5-FECF-471E-B0BC-8794EAEA8579}.Run|Any CPU.ActiveCfg = Debug|Any CPU
 		{2EB50CA5-FECF-471E-B0BC-8794EAEA8579}.Run|Any CPU.Build.0 = Debug|Any CPU
+		{87E224B9-3E0F-4050-B006-31E6EC977290}.Run|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E224B9-3E0F-4050-B006-31E6EC977290}.Run|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal

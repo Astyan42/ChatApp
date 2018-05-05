@@ -6,6 +6,6 @@ jobs:
     - stage: build docker image
       script:
       - echo $AZURE_CONTAINER_REPOSITORY_PASSWORD | docker login chatng.azurecr.io -u $AZURE_CONTAINER_REPOSITORY_LOGIN --password-stdin
-      - docker build -t chatng .
+      - docker build --build-arg ConnectionStringForProd=$CONNECTION_STRING_DB -t chatng .
       - docker tag chatng chatng.azurecr.io/chatng
       - docker push chatng.azurecr.io/chatng

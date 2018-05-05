@@ -1,4 +1,7 @@
 FROM microsoft/dotnet:2.0-sdk AS build
+
+ARG ConnectionStringForProd
+
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
@@ -14,6 +17,7 @@ RUN dotnet restore
 # copy everything else and build app
 COPY . .
 WORKDIR /app/WebApplication
+RUN sed -i -- "s/#ConnectionStringForProd/${ConnectionStringForProd}/g" appsettings.Production.json
 RUN dotnet build
 
 

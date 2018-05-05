@@ -14,6 +14,7 @@ namespace BLL.Handlers
         public ChatHandler()
         {
             // Here I might need to fill the cache if the server restarts
+            
         }
 
         public ChatMessage SendMessage(ChatMessage chat)

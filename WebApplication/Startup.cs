@@ -4,13 +4,27 @@ using BLL.Handlers;
 using DomainObjects.Interfaces;
 using DomainObjects.Interfaces.Handlers;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebApplication;
 using WebSocketManager;
 
 public class Startup
 {
+    public static IConfiguration Configuration { get; set; }
     
+    public Startup(IHostingEnvironment env)
+    {
+        var builder = new ConfigurationBuilder()
+            .SetBasePath(env.ContentRootPath)
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: false)
+            .AddEnvironmentVariables();
+        Configuration = builder.Build();
+        Console.WriteLine(Configuration.GetConnectionString("ChatDatabase"));
+    }
+
     public void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
     {
         app.UseCors(builder =>
