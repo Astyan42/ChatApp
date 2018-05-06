@@ -1,8 +1,11 @@
 using System;
 using BLL;
 using BLL.Handlers;
+using DAL.Repositories;
 using DomainObjects.Interfaces;
 using DomainObjects.Interfaces.Handlers;
+using DomainObjects.Interfaces.Repositories;
+using DomainObjects.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,7 +25,6 @@ public class Startup
             .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: false)
             .AddEnvironmentVariables();
         Configuration = builder.Build();
-        Console.WriteLine(Configuration.GetConnectionString("ChatDatabase"));
     }
 
     public void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
@@ -52,6 +54,12 @@ public class Startup
         services.AddWebSocketManager();
         services.AddSingleton<IUserHandler, UserHandler>();
         services.AddSingleton<IChatHandler, ChatHandler>();
+        services.AddSingleton<IMessageRepository, MessageRepository>();
         services.AddCors();
+        services.Configure<ConnectionSettings>(options =>
+        {
+            options.ConnectionString = Configuration.GetConnectionString("ChatDatabase");
+            options.Database = "ChatNG";
+        });
     }
 }
