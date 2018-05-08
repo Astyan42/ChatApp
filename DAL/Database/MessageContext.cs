@@ -14,13 +14,7 @@ namespace DAL.Database
                 _database = client.GetDatabase(settings.Value.Database);
             }
 
-            public IMongoCollection<ChatMessage> Messages
-            {
-                get
-                {
-                    return _database.GetCollection<ChatMessage>("Messages");
-                }
-            }
-        }
+            public IMongoCollection<ChatMessage> Messages => @_database.GetCollection<ChatMessage>("Messages");
+    }
     
 }

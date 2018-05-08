@@ -30,6 +30,10 @@
   "frameworks": {
     "netcoreapp2.0": {
       "dependencies": {
+        "Microsoft.Extensions.Options.ConfigurationExtensions": {
+          "target": "Package",
+          "version": "[2.0.2, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
