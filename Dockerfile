@@ -7,6 +7,7 @@ WORKDIR /app
 # copy csproj and restore as distinct layers
 COPY *.sln .
 COPY BLL/*.csproj ./BLL/
+COPY DAL/*.csproj ./DAL/
 COPY DomainObjects/*.csproj ./DomainObjects/
 COPY WebApplication/*.csproj ./WebApplication/
 COPY WebSocketManager/*.csproj ./WebSocketManager/
